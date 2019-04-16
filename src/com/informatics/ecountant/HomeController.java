@@ -19,7 +19,15 @@ public class HomeController {
 	public String homePage() {
 		return "home";
 	}
-	
+	@RequestMapping("/dashboard")
+	public String dashboardPage() {
+		return "dashboard";
+	}
+	@RequestMapping("/userprofile")
+	public String userprofilePage() {
+		return "userprofile";
+	}
+
 	/*
 	 * @RequestMapping(value = "/formCustomer", method = RequestMethod.GET) public
 	 * ModelAndView showCustomerForm() { return new
